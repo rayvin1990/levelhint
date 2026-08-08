@@ -1,0 +1,130 @@
+/* LevelHint shared theme — cozy farming-sim palette (warm cream + mist purple + farm green) */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+::selection { background: #d9cfec; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7;
+    color: #38322a;
+    background: #f5f0e6;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20px 16px 60px;
+}
+
+h1, h2, h3 { font-family: Georgia, 'Noto Serif', 'Times New Roman', serif; }
+h1 { font-size: 1.7em; margin: 0 0 8px; color: #3b3355; line-height: 1.3; }
+h2 { font-size: 1.3em; margin: 30px 0 12px; color: #46406b; padding-bottom: 6px; border-bottom: 2px solid #ddd2ba; }
+h3 { font-size: 1.08em; margin: 18px 0 8px; color: #57513f; }
+
+p, ul, ol { margin: 0 0 16px; }
+ul, ol { padding-left: 24px; }
+li { margin-bottom: 6px; }
+
+a { color: #6f5bb5; }
+a:hover { color: #584a94; }
+
+code { background: #ece5d3; padding: 2px 6px; border-radius: 4px; font-size: 0.92em; }
+
+/* Quick answer box */
+.quick-answer {
+    background: #efebf9;
+    border-left: 4px solid #7a68b0;
+    padding: 16px 20px;
+    margin: 18px 0 24px;
+    border-radius: 0 8px 8px 0;
+}
+.quick-answer ul { margin: 0; }
+.quick-answer li { font-size: 0.97em; margin-bottom: 5px; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 0.93em; }
+th, td { border: 1px solid #d9cfba; padding: 9px 10px; text-align: left; }
+th { background: #ede5d2; font-weight: 600; color: #4a4136; }
+tr:nth-child(even) { background: #faf6ec; }
+
+/* Tip / warning boxes */
+.tip-box {
+    background: #edf5ea;
+    border-left: 4px solid #5f9e6a;
+    padding: 14px 18px;
+    margin: 18px 0 24px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.94em;
+}
+.tip-box strong { color: #3d7046; }
+.warn-box {
+    background: #faf1da;
+    border-left: 4px solid #d99a2b;
+    padding: 14px 18px;
+    margin: 18px 0 24px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.94em;
+}
+.warn-box strong { color: #8a6116; }
+
+/* FAQ */
+.faq-item { margin-bottom: 16px; }
+.faq-q { font-weight: 600; color: #3b3355; margin-bottom: 3px; }
+.faq-a { color: #554d40; }
+
+/* Breadcrumb & meta */
+.breadcrumb { font-size: 0.85em; color: #8a8071; margin-bottom: 14px; }
+.breadcrumb a { color: #6f5bb5; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.meta { font-size: 0.85em; color: #9a9184; margin: 4px 0 18px; }
+
+/* Index cards */
+.card {
+    background: #fffdf6;
+    border: 1px solid #e3d9c2;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+.card h3 { margin: 0 0 6px; font-size: 1.1em; }
+.card h3 a { color: #3b3355; text-decoration: none; }
+.card h3 a:hover { color: #6f5bb5; }
+.card p { font-size: 0.93em; color: #6a6152; margin: 0; }
+.card .tag {
+    display: inline-block;
+    background: #e9e3f7;
+    color: #6f5bb5;
+    font-size: 0.78em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-top: 6px;
+}
+
+/* Recipe detail card (kept borderless inside; global table borders removed) */
+.recipe-card {
+    background: #fffdf6;
+    border: 2px solid #ddd0b6;
+    padding: 20px 24px;
+    margin: 18px 0 24px;
+    border-radius: 10px;
+}
+.recipe-card table { width: 100%; border-collapse: collapse; margin: 10px 0 0; }
+.recipe-card th, .recipe-card td { border: none; background: none; }
+.recipe-card th { text-align: left; color: #8a7a5c; font-size: 0.88em; padding: 5px 0; width: 120px; }
+.recipe-card td { padding: 5px 0; font-size: 0.97em; }
+
+/* Priority badges (make-money) */
+.priority { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; font-weight: 600; }
+.high { background: #dff0e2; color: #3d7046; }
+.medium { background: #f8ecd4; color: #8a6116; }
+.low { background: #ece7db; color: #6b6257; }
+
+/* Result badges (system-requirements) */
+.result { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 0.85em; font-weight: 600; }
+.pass { background: #dff0e2; color: #3d7046; }
+.fail { background: #f9e4e0; color: #a14334; }
+
+@media (max-width: 600px) {
+    body { padding: 12px 10px 40px; }
+    h1 { font-size: 1.4em; }
+    table { font-size: 0.83em; }
+    th, td { padding: 6px 7px; }
+}
