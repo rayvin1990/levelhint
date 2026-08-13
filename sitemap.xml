@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://levelhint.com/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://levelhint.com/fields-of-mistria/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-11</lastmod>
     <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/fields-of-mistria/farm-layout/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/fields-of-mistria/beginner-guide/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/fields-of-mistria/best-crops/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://levelhint.com/fields-of-mistria/storage-system/</loc>
@@ -27,7 +42,7 @@
   </url>
   <url>
     <loc>https://levelhint.com/fields-of-mistria/make-money/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
@@ -36,53 +51,63 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://levelhint.com/privacy-policy.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://levelhint.com/restory/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://levelhint.com/restory/system-requirements/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://levelhint.com/restory/beginners-guide/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://levelhint.com/restory/complete-device-list/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://levelhint.com/fields-of-mistria/romance-guide/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-08-07</lastmod>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://levelhint.com/fields-of-mistria/fishing-guide/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-08-07</lastmod>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://levelhint.com/fields-of-mistria/mining-guide/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-08-10</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/restory/</loc>
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/restory/make-money-fast/</loc>
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/restory/device-repair-tips/</loc>
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/restory/beginners-guide/</loc>
+    <lastmod>2026-08-07</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/restory/system-requirements/</loc>
+    <lastmod>2026-08-07</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/restory/complete-device-list/</loc>
+    <lastmod>2026-08-07</lastmod>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://levelhint.com/restory/customer-stories-guide/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-07</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://levelhint.com/restory/licenses-bills-guide/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-07</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/privacy-policy.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <priority>0.30</priority>
   </url>
 </urlset>
