@@ -81,6 +81,21 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://levelhint.com/restory/atari-2600-repair-guide/</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/restory/nony-playmachine-repair-guide/</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/restory/pokia-3310-repair-guide/</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://levelhint.com/restory/beginners-guide/</loc>
     <lastmod>2026-08-07</lastmod>
     <priority>0.70</priority>
