@@ -7,88 +7,330 @@
     <meta name="description" content="No-fluff game guides for Fields of Mistria and ReStory. Farm layouts, crop profits, money-making routes, device repair tips, beginner walkthroughs — the stuff real players search for. 13 guides and growing.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://levelhint.com/">
+    <meta name="theme-color" content="#0b0f14">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LevelHint">
+    <meta property="og:title" content="LevelHint — Practical Game Guides">
+    <meta property="og:description" content="Farm layouts, crop profits, money routes, device repair tips, and beginner walkthroughs for Fields of Mistria and ReStory.">
+    <meta property="og:url" content="https://levelhint.com/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://levelhint.com/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LevelHint — Practical Game Guides">
+    <meta name="twitter:description" content="Farm layouts, crop profits, money routes, device repair tips, and beginner walkthroughs.">
+    <meta name="twitter:image" content="https://levelhint.com/og-image.png">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://levelhint.com/#website",
+          "url": "https://levelhint.com/",
+          "name": "LevelHint",
+          "description": "Practical game guides for Fields of Mistria and ReStory.",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://levelhint.com/#org",
+          "name": "LevelHint",
+          "url": "https://levelhint.com/"
+        },
+        {
+          "@type": "ItemList",
+          "name": "Latest Guides",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "ReStory: How to Make Money Fast", "url": "https://levelhint.com/restory/make-money-fast/"},
+            {"@type": "ListItem", "position": 2, "name": "ReStory: Device Repair Tips — Every Gadget Type", "url": "https://levelhint.com/restory/device-repair-tips/"},
+            {"@type": "ListItem", "position": 3, "name": "Fields of Mistria: Best Crops by Season", "url": "https://levelhint.com/fields-of-mistria/best-crops/"},
+            {"@type": "ListItem", "position": 4, "name": "Fields of Mistria: Beginner Guide — First 7 Days", "url": "https://levelhint.com/fields-of-mistria/beginner-guide/"},
+            {"@type": "ListItem", "position": 5, "name": "Fields of Mistria: Farm Layout Guide", "url": "https://levelhint.com/fields-of-mistria/farm-layout/"}
+          ]
+        }
+      ]
+    }
+    </script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDZG4WRGL7"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CDZG4WRGL7');</script>
-    <link rel="stylesheet" href="/style.css">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7150674674229248" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7150674674229248" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --bg: #0b0f14;
+            --surface: #131a23;
+            --surface-2: #1a2330;
+            --border: #24303f;
+            --text: #e8eef5;
+            --muted: #8b99ac;
+            --accent: #6ee7b7;
+            --accent-2: #a78bfa;
+            --link: #7dd3fc;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+        a { color: var(--link); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Nav */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(11, 15, 20, 0.92);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-inner {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .logo {
+            font-weight: 800;
+            font-size: 1.2em;
+            color: var(--text);
+            letter-spacing: 0.5px;
+        }
+        .logo .dot { color: var(--accent); }
+        .nav-links { display: flex; gap: 18px; font-size: 0.95em; }
+        .nav-links a { color: var(--muted); }
+        .nav-links a:hover { color: var(--text); text-decoration: none; }
+
+        .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+        /* Hero */
+        .hero { padding: 48px 0 28px; }
+        .hero h1 {
+            margin: 0 0 14px;
+            font-size: 2em;
+            line-height: 1.25;
+            background: linear-gradient(90deg, var(--text) 0%, var(--accent) 130%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p { color: var(--muted); font-size: 1.05em; max-width: 620px; margin: 0; }
+
+        /* Sections */
+        h2 {
+            font-size: 1.3em;
+            margin: 40px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        h2 .accent { color: var(--accent); }
+
+        /* Cards */
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin-bottom: 12px;
+        }
+        .card h3 { margin: 0 0 8px; font-size: 1.05em; }
+        .card h3 a { color: var(--text); }
+        .card h3 a:hover { color: var(--accent); text-decoration: none; }
+        .card p { margin: 0 0 12px; color: var(--muted); font-size: 0.94em; }
+
+        .tag {
+            display: inline-block;
+            background: var(--surface-2);
+            color: var(--accent-2);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 3px 11px;
+            font-size: 0.78em;
+            margin: 0 6px 6px 0;
+            white-space: nowrap;
+        }
+        a.tag:hover { background: #223041; text-decoration: none; }
+
+        /* External links (official) */
+        .ext-link {
+            display: inline-block;
+            color: var(--accent);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: 0.82em;
+            margin-right: 8px;
+        }
+        .ext-link:hover { background: rgba(110, 231, 183, 0.08); text-decoration: none; }
+
+        /* Start here grid */
+        .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+        @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+        .grid .card { margin-bottom: 0; }
+        .grid .card h3 { font-size: 0.98em; }
+
+        /* Topic cloud */
+        .topic-cloud { line-height: 2.4; margin-bottom: 8px; }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            border-top: 1px solid var(--border);
+            background: var(--surface);
+        }
+        .footer-inner { max-width: 720px; margin: 0 auto; padding: 28px 20px; }
+        .footer-inner .about { color: var(--muted); font-size: 0.9em; max-width: 620px; margin-bottom: 18px; }
+        .footer-links { display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.9em; margin-bottom: 18px; }
+        .footer-links a { color: var(--link); }
+        .copyright { color: var(--muted); font-size: 0.8em; border-top: 1px solid var(--border); padding-top: 16px; }
+    </style>
 </head>
 <body>
 
-<h1>LevelHint</h1>
-<p style="font-size:1.1em;max-width:660px;color:#666;">Practical, no-fluff game guides. Farm layouts, crop profits, money-making routes, device repair tips, and beginner walkthroughs — the stuff you actually search for mid-game. 13 guides across 2 games and growing.</p>
+<nav>
+    <div class="nav-inner">
+        <span class="logo">LevelHint<span class="dot">.</span></span>
+        <div class="nav-links">
+            <a href="#latest">Guides</a>
+            <a href="#games">Games</a>
+            <a href="#topics">Topics</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+</nav>
 
-<h2>Latest Guides</h2>
+<div class="wrap">
 
-<div class="card">
-    <h3><a href="/restory/make-money-fast/">ReStory: How to Make Money Fast</a></h3>
-    <p>5 best yen strategies: salvage components instead of buying, upgrade tools before decorating, prioritize console tickets over phones, combine part orders, and expand workbench for parallel repairs.</p>
-    <span class="tag">money</span> <span class="tag">repair-shop</span> <span class="tag">new</span>
+    <section class="hero">
+        <h1>Practical game guides. No fluff.</h1>
+        <p>Farm layouts, crop profits, money routes, device repair tips, and beginner walkthroughs — the stuff you actually search for mid-game. <strong style="color:var(--text);">13 guides across 2 games and growing.</strong></p>
+    </section>
+
+    <section id="start">
+        <h2><span class="accent">▍</span> Start Here</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Playing Fields of Mistria?</h3>
+                <p>Farm layout, best crops by season, how to make money, and a day-by-day beginner walkthrough.</p>
+                <a class="tag" href="/fields-of-mistria/">All FOM guides</a>
+            </div>
+            <div class="card">
+                <h3>Playing ReStory?</h3>
+                <p>Make money fast, repair every device type, and master licenses, bills, and customer stories.</p>
+                <a class="tag" href="/restory/">All ReStory guides</a>
+            </div>
+            <div class="card">
+                <h3>New here?</h3>
+                <p>Every guide is written for the search you actually typed — practical, specific, no filler.</p>
+                <a class="tag" href="#latest">Latest guides</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest">
+        <h2><span class="accent">▍</span> Latest Guides</h2>
+
+        <div class="card">
+            <h3><a href="/restory/make-money-fast/">ReStory: How to Make Money Fast</a></h3>
+            <p>5 best yen strategies: salvage components instead of buying, upgrade tools before decorating, prioritize console tickets over phones, combine part orders, and expand the workbench for parallel repairs.</p>
+            <span class="tag">money</span> <span class="tag">repair-shop</span> <span class="tag">new</span>
+        </div>
+
+        <div class="card">
+            <h3><a href="/restory/device-repair-tips/">ReStory: Device Repair Tips — Every Gadget Type</a></h3>
+            <p>How to fix phones, game consoles, cameras, music players, and audio receivers. Fault &rarr; fix &rarr; tools table per device type.</p>
+            <span class="tag">repair</span> <span class="tag">devices</span> <span class="tag">new</span>
+        </div>
+
+        <div class="card">
+            <h3><a href="/fields-of-mistria/best-crops/">Fields of Mistria: Best Crops by Season</a></h3>
+            <p>Most profitable plants for spring, summer, fall, and winter. Regrowable vs single-harvest strategy, the 15th-of-month rule, and best greenhouse picks.</p>
+            <span class="tag">crops</span> <span class="tag">farming</span> <span class="tag">money</span>
+        </div>
+
+        <div class="card">
+            <h3><a href="/fields-of-mistria/beginner-guide/">Fields of Mistria: Beginner Guide — First 7 Days</a></h3>
+            <p>Day-by-day walkthrough: tool unlock order, money spending priority, request board routine, free stamina sources, and 5 mistakes that cost new players hours.</p>
+            <span class="tag">beginner</span> <span class="tag">walkthrough</span>
+        </div>
+
+        <div class="card">
+            <h3><a href="/fields-of-mistria/farm-layout/">Fields of Mistria: Farm Layout Guide</a></h3>
+            <p>Plan your farm for maximum efficiency: crop grid sizing by watering can tier, barn &amp; coop placement, fruit tree orchard, greenhouse zone, chest routing.</p>
+            <span class="tag">layout</span> <span class="tag">farm</span> <span class="tag">strategy</span>
+        </div>
+
+        <p><a href="/fields-of-mistria/">&rarr; See all 10 Fields of Mistria guides</a> &nbsp;|&nbsp; <a href="/restory/">&rarr; See all 7 ReStory guides</a></p>
+    </section>
+
+    <section id="topics">
+        <h2><span class="accent">▍</span> Browse by Topic</h2>
+        <div class="topic-cloud">
+            <a href="/fields-of-mistria/farm-layout/" class="tag">farm-layout</a>
+            <a href="/fields-of-mistria/best-crops/" class="tag">best-crops</a>
+            <a href="/fields-of-mistria/make-money/" class="tag">make-money</a>
+            <a href="/restory/make-money-fast/" class="tag">money-routes</a>
+            <a href="/fields-of-mistria/beginner-guide/" class="tag">beginner-guide</a>
+            <a href="/restory/beginners-guide/" class="tag">first-steps</a>
+            <a href="/restory/device-repair-tips/" class="tag">device-repair</a>
+            <a href="/fields-of-mistria/cooking-guide/" class="tag">cooking</a>
+            <a href="/fields-of-mistria/fishing-guide/" class="tag">fishing</a>
+            <a href="/fields-of-mistria/mining-guide/" class="tag">mining</a>
+            <a href="/fields-of-mistria/romance-guide/" class="tag">romance</a>
+            <a href="/fields-of-mistria/storage-system/" class="tag">storage</a>
+            <a href="/restory/complete-device-list/" class="tag">device-list</a>
+            <a href="/restory/customer-stories-guide/" class="tag">story-guide</a>
+            <a href="/restory/licenses-bills-guide/" class="tag">licenses</a>
+            <a href="/fields-of-mistria/system-requirements/" class="tag">system-requirements</a>
+            <a href="/restory/system-requirements/" class="tag">pc-specs</a>
+        </div>
+    </section>
+
+    <section id="games">
+        <h2><span class="accent">▍</span> Games We Cover</h2>
+
+        <div class="card">
+            <h3><a href="/fields-of-mistria/">Fields of Mistria</a></h3>
+            <p>Farming life-sim by NPC Studio. 10 guides: farm layout, beginner walkthrough, best crops per season, make money, cooking recipes, fishing locations, mining biomes, romance candidates, storage system, and system requirements.</p>
+            <a class="ext-link" href="https://store.steampowered.com/app/2142790/Fields_of_Mistria/" target="_blank" rel="noopener">Steam &nearr;</a>
+            <a class="ext-link" href="https://www.fieldsofmistria.com/" target="_blank" rel="noopener">Official Site &nearr;</a>
+            <span class="tag">farming</span> <span class="tag">layout</span> <span class="tag">crops</span> <span class="tag">money</span>
+        </div>
+
+        <div class="card">
+            <h3><a href="/restory/">ReStory: Chill Electronics Repairs</a></h3>
+            <p>Cozy repair shop sim set in mid-2000s Tokyo, by Mandragora / tinyBuild. 7 guides: make money strategies, device repair tips, beginner walkthrough, complete device list, customer stories, licenses &amp; bills, and system requirements.</p>
+            <a class="ext-link" href="https://store.steampowered.com/app/3812600/" target="_blank" rel="noopener">Steam &nearr;</a>
+            <span class="tag">repair</span> <span class="tag">devices</span> <span class="tag">money</span> <span class="tag">cozy</span>
+        </div>
+    </section>
+
 </div>
 
-<div class="card">
-    <h3><a href="/restory/device-repair-tips/">ReStory: Device Repair Tips — Every Gadget Type</a></h3>
-    <p>How to fix phones (Pokia, flip), game consoles (Atari, retro), cameras, PMP music players, and audio receivers. Fault → fix → tools table per device.</p>
-    <span class="tag">repair</span> <span class="tag">devices</span> <span class="tag">new</span>
-</div>
-
-<div class="card">
-    <h3><a href="/fields-of-mistria/best-crops/">Fields of Mistria: Best Crops by Season</a></h3>
-    <p>Most profitable plants for spring, summer, fall, and winter. Regrowable vs single-harvest strategy, the 15th-of-month rule, and best greenhouse picks.</p>
-    <span class="tag">crops</span> <span class="tag">farming</span> <span class="tag">money</span>
-</div>
-
-<div class="card">
-    <h3><a href="/fields-of-mistria/beginner-guide/">Fields of Mistria: Beginner Guide — First 7 Days</a></h3>
-    <p>Day-by-day walkthrough: tool unlock order, money spending priority, request board routine, free stamina sources, and 5 mistakes that cost new players hours.</p>
-    <span class="tag">beginner</span> <span class="tag">walkthrough</span>
-</div>
-
-<div class="card">
-    <h3><a href="/fields-of-mistria/farm-layout/">Fields of Mistria: Farm Layout Guide</a></h3>
-    <p>Plan your farm for maximum efficiency: crop grid sizing by watering can tier, barn &amp; coop placement, fruit tree orchard, greenhouse zone, chest routing.</p>
-    <span class="tag">layout</span> <span class="tag">farm</span> <span class="tag">strategy</span>
-</div>
-
-<p><a href="/fields-of-mistria/">→ See all 10 Fields of Mistria guides</a> &nbsp;|&nbsp; <a href="/restory/">→ See all 7 ReStory guides</a></p>
-
-<h2>Browse by Topic</h2>
-<div style="max-width:660px;line-height:2.2;">
-    <a href="/fields-of-mistria/farm-layout/" class="tag">farm-layout</a>
-    <a href="/fields-of-mistria/best-crops/" class="tag">best-crops</a>
-    <a href="/fields-of-mistria/make-money/" class="tag">make-money</a>
-    <a href="/restory/make-money-fast/" class="tag">money-routes</a>
-    <a href="/fields-of-mistria/beginner-guide/" class="tag">beginner-guide</a>
-    <a href="/restory/beginners-guide/" class="tag">first-steps</a>
-    <a href="/restory/device-repair-tips/" class="tag">device-repair</a>
-    <a href="/fields-of-mistria/cooking-guide/" class="tag">cooking</a>
-    <a href="/fields-of-mistria/fishing-guide/" class="tag">fishing</a>
-    <a href="/fields-of-mistria/mining-guide/" class="tag">mining</a>
-    <a href="/fields-of-mistria/romance-guide/" class="tag">romance</a>
-    <a href="/fields-of-mistria/storage-system/" class="tag">storage</a>
-    <a href="/restory/complete-device-list/" class="tag">device-list</a>
-    <a href="/restory/customer-stories-guide/" class="tag">story-guide</a>
-    <a href="/restory/licenses-bills-guide/" class="tag">licenses</a>
-    <a href="/fields-of-mistria/system-requirements/" class="tag">system-requirements</a>
-    <a href="/restory/system-requirements/" class="tag">pc-specs</a>
-</div>
-
-<h2>Games We Cover</h2>
-
-<div class="card">
-    <h3><a href="/fields-of-mistria/">Fields of Mistria</a></h3>
-    <p>Farming life-sim by NPC Studio. 10 guides: farm layout, beginner walkthrough, best crops per season, make money, cooking recipes, fishing locations, mining biomes, romance candidates, storage system, and system requirements.</p>
-    <span class="tag">farming</span> <span class="tag">layout</span> <span class="tag">crops</span> <span class="tag">money</span> <span class="tag">beginner</span>
-</div>
-
-<div class="card">
-    <h3><a href="/restory/">ReStory: Chill Electronics Repairs</a></h3>
-    <p>Cozy repair shop sim set in mid-2000s Tokyo. 7 guides: make money strategies, device-specific repair tips, beginner walkthrough, complete device list, customer stories, licenses &amp; bills, and system requirements.</p>
-    <span class="tag">repair</span> <span class="tag">devices</span> <span class="tag">money</span> <span class="tag">cozy</span> <span class="tag">simulator</span>
-</div>
-
-<p style="margin-top:40px;font-size:0.85em;color:#999;border-top:1px solid #e0e0e0;padding-top:14px;">
-    &copy; 2026 levelhint.com &mdash; Unofficial game guides. All trademarks belong to their respective owners.
-</p>
+<footer id="about">
+    <div class="footer-inner">
+        <p class="about">LevelHint is an unofficial, fan-made guide site. We write practical, no-fluff walkthroughs and reference pages for the games real players search for. Not affiliated with NPC Studio, Mandragora, or tinyBuild.</p>
+        <div class="footer-links">
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="https://store.steampowered.com/app/2142790/Fields_of_Mistria/" target="_blank" rel="noopener">Fields of Mistria on Steam</a>
+            <a href="https://store.steampowered.com/app/3812600/" target="_blank" rel="noopener">ReStory on Steam</a>
+        </div>
+        <p class="copyright">&copy; 2026 levelhint.com — Unofficial game guides. All trademarks belong to their respective owners.</p>
+    </div>
+</footer>
 
 </body>
 </html>
