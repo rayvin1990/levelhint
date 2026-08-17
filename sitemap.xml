@@ -125,4 +125,24 @@
     <lastmod>2026-08-07</lastmod>
     <priority>0.30</priority>
   </url>
+  <url>
+    <loc>https://levelhint.com/guides/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/about/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/faq/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://levelhint.com/contact/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.50</priority>
+  </url>
 </urlset>
